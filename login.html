@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Portal - ACE Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>ACE <span>Solutions</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li class="active"><a href="login.html" class="btn-login">Customer Portal</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="login-section">
+        <div class="container">
+            <div class="login-container">
+                <div class="login-header">
+                    <h2>Customer Portal</h2>
+                    <p>Access your support requests, track queries, and manage your account</p>
+                </div>
+                
+                <div class="login-tabs">
+                    <button class="tab-btn active" data-tab="login">Login</button>
+                    <button class="tab-btn" data-tab="register">Register</button>
+                    <button class="tab-btn" data-tab="reset">Reset Password</button>
+                </div>
+                
+                <div class="tab-content active" id="login">
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="loginEmail">Email Address</label>
+                            <input type="email" id="loginEmail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" id="loginPassword" name="password" required>
+                        </div>
+                        <div class="form-options">
+                            <label>
+                                <input type="checkbox" name="remember"> Remember me
+                            </label>
+                            <a href="#" class="forgot-password" data-tab="reset">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="btn-primary">Login</button>
+                    </form>
+                </div>
+                
+                <div class="tab-content" id="register">
+                    <form id="registerForm">
+                        <div class="form-group">
+                            <label for="regName">Full Name</label>
+                            <input type="text" id="regName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="regEmail">Email Address</label>
+                            <input type="email" id="regEmail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="regCompany">Company</label>
+                            <input type="text" id="regCompany" name="company" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="regPhone">Phone Number</label>
+                            <input type="tel" id="regPhone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="regPassword">Password</label>
+                            <input type="password" id="regPassword" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="regConfirmPassword">Confirm Password</label>
+                            <input type="password" id="regConfirmPassword" name="confirmPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="terms" required> I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn-primary">Register</button>
+                    </form>
+                </div>
+                
+                <div class="tab-content" id="reset">
+                    <form id="resetForm">
+                        <div class="form-group">
+                            <label for="resetEmail">Email Address</label>
+                            <input type="email" id="resetEmail" name="email" required>
+                        </div>
+                        <p>We'll send you a link to reset your password.</p>
+                        <button type="submit" class="btn-primary">Send Reset Link</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="login-features">
+                <h3>Customer Portal Features</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Submit and track support requests</li>
+                    <li><i class="fas fa-check-circle"></i> Access exclusive resources</li>
+                    <li><i class="fas fa-check-circle"></i> View your service history</li>
+                    <li><i class="fas fa-check-circle"></i> Manage your account details</li>
+                    <li><i class="fas fa-check-circle"></i> Communicate with our support team</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>ACE Solutions</h3>
+                    <p>Providing innovative IT solutions to businesses across Belize, Central America, and the Caribbean.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 IT Plaza, Belize City, Belize</p>
+                    <p><i class="fas fa-phone"></i> +501 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@acesolutions.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ACE Solutions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Widget -->
+    <div class="chat-widget">
+        <div class="chat-header">
+            <h4>Need Help?</h4>
+            <button class="chat-toggle"><i class="fas fa-comments"></i></button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>
