@@ -1,0 +1,73 @@
+/* Additional responsive styles that might override main styles */
+
+@media (max-width: 768px) {
+    /* Adjust hero section for mobile */
+    .hero {
+        padding: 120px 0 60px;
+    }
+    
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    .hero p {
+        font-size: 16px;
+    }
+    
+    /* Adjust service cards for mobile */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Adjust project cards for mobile */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Adjust contact section layout */
+    .contact-section .container {
+        flex-direction: column;
+    }
+    
+    .contact-info, .contact-form-container {
+        width: 100%;
+    }
+    
+    /* Adjust login form layout */
+    .login-container {
+        flex-direction: column;
+    }
+    
+    .login-form, .login-features {
+        width: 100%;
+    }
+    
+    /* Make chat widget full width on small screens */
+    .chat-widget {
+        width: calc(100% - 40px);
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    /* Adjust testimonial form */
+    .testimonial-form {
+        padding: 20px;
+    }
+    
+    /* Adjust modal padding */
+    .modal-content {
+        padding: 20px;
+    }
+}
